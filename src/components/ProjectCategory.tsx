@@ -18,7 +18,9 @@ const ProjectCategory: React.FC<ProjectCategoryProps> = ({ title, description, p
   return (
     <div className="projects-category">
       <h3 style={{ color: colors.primary }}>{title}</h3>
-      <p className="category-description" style={{ color: colors.grayMedium }}>{description}</p>
+      <p className="category-description" style={{ color: colors.grayMedium }}>
+        {description}
+      </p>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard

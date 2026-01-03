@@ -7,15 +7,13 @@ const Hero: React.FC = () => {
         <h1>
           Olá, eu sou <span className="highlight">Desenvolvedor Full Stack</span>
         </h1>
-        <p>
-          Criando experiências digitais incríveis com React, TypeScript e tecnologias modernas
-        </p>
+        <p>Criando experiências digitais incríveis com React, TypeScript e tecnologias modernas</p>
         <div className="buttons">
           <button className="btn-primary">Contratar</button>
           <button className="btn-secondary">Ver Projetos</button>
         </div>
       </div>
-      
+
       {/* Decorative gradient orbs */}
       <div className="hero-decoration">
         <div className="orb orb-1"></div>
