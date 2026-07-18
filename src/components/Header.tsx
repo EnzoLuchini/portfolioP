@@ -12,19 +12,28 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const links = [
+    { num: '01', label: 'Sobre', href: '#sobre' },
+    { num: '02', label: 'Habilidades', href: '#habilidades' },
+    { num: '03', label: 'Experiência', href: '#experiencia' },
+    { num: '04', label: 'Projetos', href: '#projetos' },
+    { num: '05', label: 'Contato', href: '#contato' },
+  ];
+
   return (
     <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
-      <nav className="nav">
-        <div className="logo">
-          <span className="logo-text">Portfolio</span>
-          <span className="logo-dot">.</span>
-        </div>
+      <nav className="nav" aria-label="Navegação principal">
+        <a href="#topo" className="logo">
+          <span className="logo-prefix">~/</span>
+          <span className="logo-text">enzo.luchini</span>
+        </a>
         <div className="nav-links">
-          <a href="#sobre">Sobre</a>
-          <a href="#skills">Skills</a>
-          <a href="#experiencia">Experiência</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#contato">Contato</a>
+          {links.map(link => (
+            <a key={link.href} href={link.href}>
+              <span className="nav-num">{link.num}</span>
+              {link.label}
+            </a>
+          ))}
         </div>
       </nav>
     </header>

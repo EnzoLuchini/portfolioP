@@ -1,32 +1,21 @@
 import React from 'react';
-import { colors } from '../styles/colors';
-import ProjectCard from './ProjectCard';
-
-interface Project {
-  title: string;
-  tech: string;
-  description: string;
-}
+import ProjectCard, { Project } from './ProjectCard';
 
 interface ProjectCategoryProps {
   title: string;
   description: string;
   projects: Project[];
+  startIndex?: number;
 }
 
-const ProjectCategory: React.FC<ProjectCategoryProps> = ({ title, description, projects }) => {
+const ProjectCategory: React.FC<ProjectCategoryProps> = ({ title, description, projects, startIndex = 1 }) => {
   return (
     <div className="projects-category">
-      <h3 style={{ color: colors.primary }}>{title}</h3>
-      <p className="category-description" style={{ color: colors.grayMedium }}>{description}</p>
+      <h3>{title}</h3>
+      <p className="category-description">{description}</p>
       <div className="projects-grid">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            tech={project.tech}
-            description={project.description}
-          />
+        {projects.map((project, i) => (
+          <ProjectCard key={project.title} index={startIndex + i} {...project} />
         ))}
       </div>
     </div>

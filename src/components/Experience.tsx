@@ -1,20 +1,25 @@
 import React from 'react';
-import { colors } from '../styles/colors';
+
+const START_YEAR = 2023;
 
 const Experience: React.FC = () => {
-  const cardStyle = {
-    background: colors.backgroundCard,
-    borderColor: `${colors.primary}33`
-  };
+  const years = new Date().getFullYear() - START_YEAR;
 
   return (
     <section id="experiencia" className="section">
-      <h2 style={{ color: colors.white }}>Experiência</h2>
-      <div className="experience-card" style={cardStyle}>
-        <h3 style={{ color: colors.primary }}>Desenvolvedor Full-Stack</h3>
-        <h4 style={{ color: colors.secondary }}>Apdata</h4>
-        <p className="experience-period" style={{ color: colors.grayMedium }}>2023 - Presente (2 anos)</p>
-        <p style={{ color: colors.grayLight }}>Desenvolvimento de soluções empresariais utilizando tecnologias modernas, focando em performance e escalabilidade.</p>
+      <p className="section-label">03 / Experiência</p>
+      <h2>Onde estive construindo</h2>
+      <div className="experience-card">
+        <h3>Desenvolvedor Full-Stack</h3>
+        <p className="experience-company">Apdata</p>
+        <p className="experience-period">
+          {START_YEAR} — presente · {years} {years === 1 ? 'ano' : 'anos'}
+        </p>
+        <p>
+          Desenvolvimento de soluções empresariais de RH utilizadas por grandes
+          empresas, com foco em performance, escalabilidade e manutenção de
+          sistemas críticos.
+        </p>
       </div>
     </section>
   );

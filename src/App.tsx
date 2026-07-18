@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Hero, About, Skills, Experience, Projects, Contact } from './components';
+import { Header, Hero, About, Skills, Experience, Projects, Contact, Footer } from './components';
 import './App.css';
 
 const App: React.FC = () => {
@@ -13,6 +13,7 @@ const App: React.FC = () => {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

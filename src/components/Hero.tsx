@@ -2,26 +2,28 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>
-          Olá, eu sou <span className="highlight">Desenvolvedor Full Stack</span>
-        </h1>
-        <p>
-          Criando experiências digitais incríveis com React, TypeScript e tecnologias modernas
-        </p>
-        <div className="buttons">
-          <button className="btn-primary">Contratar</button>
-          <button className="btn-secondary">Ver Projetos</button>
-        </div>
+    <section className="hero" id="topo">
+      <p className="hero-eyebrow">
+        <span className="prompt">$</span> whoami
+        <span className="cursor" aria-hidden="true"></span>
+      </p>
+      <h1>
+        Enzo
+        <span className="surname">Luchini</span>
+      </h1>
+      <p className="hero-role">{'// desenvolvedor full-stack'}</p>
+      <p className="hero-desc">
+        Construo sistemas web com React e TypeScript, APIs com C# e soluções
+        desktop com Delphi — do banco de dados à interface.
+      </p>
+      <div className="hero-actions">
+        <a className="btn btn-primary" href="#projetos">Ver projetos</a>
+        <a className="btn btn-ghost" href="mailto:luchini.enzo@outlook.com">Entrar em contato</a>
       </div>
-      
-      {/* Decorative gradient orbs */}
-      <div className="hero-decoration">
-        <div className="orb orb-1"></div>
-        <div className="orb orb-2"></div>
-        <div className="orb orb-3"></div>
-      </div>
+      <p className="hero-status">
+        <span className="status-dot" aria-hidden="true"></span>
+        Disponível para vagas e projetos freelance
+      </p>
     </section>
   );
 };
