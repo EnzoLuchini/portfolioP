@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <p className="hero-role">{'// desenvolvedor full-stack'}</p>
       <p className="hero-desc">
         Construo sistemas web com React e TypeScript, APIs com C# e soluções
-        desktop com Delphi — do banco de dados à interface.
+        desktop com Delphi, cuidando de tudo, do banco de dados à interface.
       </p>
       <div className="hero-actions">
         <a className="btn btn-primary" href="#projetos">Ver projetos</a>

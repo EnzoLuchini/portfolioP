@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       <h2>Trabalho selecionado</h2>
 
       <ProjectCategory
-        title="Freelancer — clientes reais"
+        title="Freelancer · clientes reais"
         description="Soluções entregues e em produção para clientes"
         projects={freelancerProjects}
         startIndex={1}

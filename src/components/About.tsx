@@ -16,7 +16,7 @@ const About: React.FC = () => {
           <p>
             Hoje sou desenvolvedor na Tunad, trabalhando principalmente com C#
             e integração de IA em aplicações. Em paralelo, desenvolvo projetos
-            freelancer para pequenas empresas — de sistemas comerciais completos
+            freelancer para pequenas empresas, de sistemas comerciais completos
             a websites com painel administrativo.
           </p>
         </div>

@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
       <h2>Vamos construir algo?</h2>
       <p className="contact-lead">
         Estou aberto a projetos freelance.
-        Me chame por email — respondo rápido.
+        Me chame por email e eu respondo rápido.
       </p>
       <div className="contact-email-wrap">
         <a className="contact-email" href={`mailto:${EMAIL}`} onClick={handleCopy}>
