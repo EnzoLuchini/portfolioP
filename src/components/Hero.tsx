@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
       </div>
       <p className="hero-status">
         <span className="status-dot" aria-hidden="true"></span>
-        Disponível para vagas e projetos freelance
+        Disponível para projetos freelance
       </p>
     </section>
   );

@@ -7,11 +7,13 @@ interface SkillGroup {
 
 const Skills: React.FC = () => {
   const groups: SkillGroup[] = [
-    { category: 'frontend', items: ['React', 'TypeScript', 'HTML & CSS'] },
-    { category: 'backend', items: ['C# / .NET', 'Node.js', 'Java', 'REST APIs'] },
+    { category: 'frontend', items: ['React', 'TypeScript', 'JavaScript', 'HTML & CSS'] },
+    { category: 'backend', items: ['C# / .NET', 'Node.js', 'Java Spring Boot', 'Entity Framework', 'REST APIs'] },
+    { category: 'ia', items: ['Integração de IA', 'SDKs de IA'] },
+    { category: 'mobile', items: ['Flutter', 'Xamarin'] },
     { category: 'desktop', items: ['Delphi'] },
-    { category: 'banco de dados', items: ['SQL', 'Firebird', 'Entity Framework'] },
-    { category: 'ferramentas', items: ['Git'] },
+    { category: 'banco de dados', items: ['SQL Server', 'Oracle', 'PostgreSQL', 'MongoDB', 'Firebird'] },
+    { category: 'práticas', items: ['Git', 'Agile / Scrum', 'Code Review', 'TDD'] },
   ];
 
   return (

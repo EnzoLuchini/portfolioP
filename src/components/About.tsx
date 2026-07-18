@@ -14,9 +14,10 @@ const About: React.FC = () => {
             desktop e <strong>Java</strong> para soluções empresariais.
           </p>
           <p>
-            Hoje trabalho com sistemas empresariais na Apdata e, em paralelo,
-            desenvolvo projetos freelancer para pequenas empresas — de sistemas
-            comerciais completos a websites com painel administrativo.
+            Hoje sou desenvolvedor na Tunad, trabalhando principalmente com C#
+            e integração de IA em aplicações. Em paralelo, desenvolvo projetos
+            freelancer para pequenas empresas — de sistemas comerciais completos
+            a websites com painel administrativo.
           </p>
         </div>
         <div className="about-facts">
@@ -30,7 +31,7 @@ const About: React.FC = () => {
           </div>
           <div>
             <p className="fact-label">Aberto a</p>
-            <p className="fact-value">CLT / PJ · Freelance</p>
+            <p className="fact-value">Projetos freelance</p>
           </div>
         </div>
       </div>

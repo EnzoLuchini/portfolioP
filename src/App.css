@@ -447,10 +447,20 @@ button:focus-visible {
 }
 
 /* ============ Experiência ============ */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .experience-card {
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--border-strong);
   padding: 0.5rem 0 0.5rem 2rem;
   max-width: 640px;
+}
+
+.experience-card.experience-current {
+  border-left-color: var(--accent);
 }
 
 .experience-card h3 {
@@ -626,14 +636,18 @@ button:focus-visible {
 
 .contact-socials a {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-dim);
+  font-size: 0.9rem;
+  color: var(--text);
   text-decoration: none;
-  transition: color 0.2s ease;
+  border: 1px solid var(--border-strong);
+  padding: 0.6rem 1.25rem;
+  transition: all 0.2s ease;
 }
 
 .contact-socials a:hover {
   color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .contact-socials .arrow {

@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
       <p className="section-label">05 / Contato</p>
       <h2>Vamos construir algo?</h2>
       <p className="contact-lead">
-        Estou aberto a oportunidades CLT/PJ e a projetos freelance.
+        Estou aberto a projetos freelance.
         Me chame por email — respondo rápido.
       </p>
       <div className="contact-email-wrap">
